@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "japan_news": {
+      "type": "string",
+      "description": "国内ニュース全般の日本語要約"
+    },
+    "world_news": {
+      "type": "string",
+      "description": "海外ニュース全般の日本語要約"
+    },
+    "ai_news": {
+      "type": "string",
+      "description": "生成AIニュース全般の日本語要約"
+    }
+  },
+  "required": [
+    "japan_news",
+    "world_news",
+    "ai_news"
+  ],
+  "additionalProperties": false
+}

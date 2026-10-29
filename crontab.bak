@@ -1,0 +1,6 @@
+SHELL=/bin/bash
+HOME=/home/k-numano
+PATH=/home/k-numano/.nvm/versions/node/v24.15.0/bin:/usr/local/bin:/usr/bin:/bin
+
+0 3,7,11,15,19,23 * * * /usr/bin/flock -n /home/k-numano/workspace/switchbot/.news-cron.lock /home/k-numano/workspace/switchbot/update_news.sh >> /home/k-numano/workspace/switchbot/news_cron.log 2>&1
+10 3,7,11,15,19,23 * * * cd ~/workspace/switchbot/; python3 send_message.py
